@@ -1,0 +1,586 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div id="preloader">
+	<div class="preloader"><span></span><span></span></div>
+</div>
+
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+
+<div id="main-wrapper">
+
+	<!-- ============================================================== -->
+	<!-- Top header  -->
+	<!-- ============================================================== -->
+
+	<div class="clearfix"></div>
+	<!-- ============================================================== -->
+	<!-- Top header  -->
+	<!-- ============================================================== -->
+
+	<!-- ============================ Hero Banner  Start================================== -->
+	<div class="image-cover hero-banner" style="background:#2540a2 url({% static 'img/banner-3.jpg' %}) no-repeat;"
+		data-overlay="6">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-9 col-md-11 col-sm-12">
+					<div class="inner-banner-text text-center">
+						<p class="lead-i">Amet consectetur adipisicing <span class="badge badge-success">New</span></p>
+						<h2><span class="font-normal">Find Your</span> Perfect Place.</h2>
+					</div>
+
+					<form action="/filtre/" method="POST">
+						<div class="full-search-2 eclip-search italian-search hero-search-radius shadow mt-5">
+							<div class="hero-search-content">
+
+								<div class="row">
+
+									<div class="col-lg-4 col-md-4 col-sm-12 b-r">
+										<div class="form-group">
+											<div class="input-with-icon">
+												<input type="text" class="form-control" name="search_object"
+													placeholder="Que recherchez-vous ?">
+												<i class="ti-search"></i>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-lg-3 col-md-3 col-sm-12">
+										<div class="form-group">
+											<div class="input-with-icon">
+												<select id="ptypes" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">Any Type</option>
+													<option value="2">Apartment</option>
+													<option value="3">Villas</option>
+													<option value="4">Commercial</option>
+													<option value="5">Offices</option>
+													<option value="6">Garage</option>
+												</select>
+												<i class="ti-briefcase"></i>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-lg-3 col-md-3 col-sm-12">
+										<div class="form-group">
+											<div class="input-with-icon b-l">
+												<select id="location" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">New York City</option>
+													<option value="2">Chicago, Illinois</option>
+													<option value="3">Las Vegas</option>
+													<option value="4">New Orleans</option>
+													<option value="5">San Francisco</option>
+													<option value="6">Washington</option>
+												</select>
+												<i class="ti-location-pin"></i>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-2 col-md-2 col-sm-12">
+										<div class="form-group">
+											<button type="submit" class="btn search-btn"
+												style="background-color: #27B737;">Trouver</button>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ============================ Hero Banner End ================================== -->
+
+	<!-- ============================ Step How To Use Start ================================== -->
+	<section>
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-10 text-center">
+					<div class="sec-heading center">
+						<h2>How It Works?</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="middle-icon-features-item">
+						<div class="icon-features-wrap">
+							<div class="middle-icon-large-features-box f-light-success"><i
+									class="ti-receipt text-success"></i></div>
+						</div>
+						<div class="middle-icon-features-content">
+							<h4>Evaluate Property</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have
+								Ipsum available.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<div class="middle-icon-features-item">
+						<div class="icon-features-wrap">
+							<div class="middle-icon-large-features-box f-light-warning"><i
+									class="ti-user text-warning"></i></div>
+						</div>
+						<div class="middle-icon-features-content">
+							<h4>Meet Your Agent</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have
+								Ipsum available.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<div class="middle-icon-features-item remove">
+						<div class="icon-features-wrap">
+							<div class="middle-icon-large-features-box f-light-blue"><i class="ti-shield text-blue"></i>
+							</div>
+						</div>
+						<div class="middle-icon-features-content">
+							<h4>Close The Deal</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have
+								Ipsum available.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<div class="clearfix"></div>
+	<!-- ============================ Step How To Use End ====================== -->
+
+	<!-- ============================ Top Announces Start ================================== -->
+	<section class="pt-0">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-10 text-center">
+					<div class="sec-heading center mb-4">
+						<h2>Top Annonces</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 col-md-12">
+					<div class="property-slide -mb-2">
+
+						<!-- Single Property -->
+						{% include 'includes/property-slide.html' %}
+						<!-- End Single Property -->
+
+						<!-- Single Property -->
+						{% include 'includes/property-slide.html' %}
+						<!-- End Single Property -->
+
+						<!-- Single Property -->
+						{% include 'includes/property-slide.html' %}
+						<!-- End Single Property -->
+
+						<!-- Single Property -->
+						{% include 'includes/property-slide.html' %}
+						<!-- End Single Property -->
+
+						<!-- Single Property -->
+						{% include 'includes/property-slide.html' %}
+						<!-- End Single Property -->
+
+						<!-- Single Property -->
+						{% include 'includes/property-slide.html' %}
+						<!-- End Single Property -->
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- ============================ Top Announce End ================================== -->
+
+	<!-- ============================ All Property for rent start================================== -->
+	<section class="bg-light">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-10 text-center">
+					<div class="sec-heading center">
+						<h2>Maisons - Appartements - Parcelles à louer</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row list-layout">
+
+				<!-- Single Property Start -->
+				<div class="col-lg-6 col-md-12">
+					{% include 'includes/property-simple-horizontal.html' %}
+				</div>
+				<!-- Single Property End -->
+				<!-- Single Property Start -->
+				<div class="col-lg-6 col-md-12">
+					{% include 'includes/property-simple-horizontal.html' %}
+				</div>
+				<!-- Single Property End -->
+			</div>
+
+			<!-- Pagination -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+					<a href="/show-all-property/" class="btn btn-theme-light rounded">Browse More Properties</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- ============================ All Featured Property ================================== -->
+
+	<!-- ============================ Achievement Start ================================== -->
+	<section>
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-10 text-center">
+					<div class="sec-heading center mb-4">
+						<h2>Achievement</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6">
+					<div class="achievement-wrap">
+						<div class="achievement-content">
+							<h4>20500+</h4>
+							<p>Completed Property</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-6">
+					<div class="achievement-wrap">
+						<div class="achievement-content">
+							<h4>7600+</h4>
+							<p>Property Sales</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-6">
+					<div class="achievement-wrap">
+						<div class="achievement-content">
+							<h4>12300+</h4>
+							<p>Apartment Rent</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-6">
+					<div class="achievement-wrap">
+						<div class="achievement-content">
+							<h4>15200+</h4>
+							<p>Happy Clients</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<div class="clearfix"></div>
+	<!-- ============================ Achievement End ================================== -->
+
+	<!-- ============================ All Property ================================== -->
+	<section class="bg-light">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-10 text-center">
+					<div class="sec-heading center">
+						<h2>Maisons - Appartements - Parcelles à vendre</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row list-layout">
+
+				<!-- Single Property Start -->
+				<div class="col-lg-6 col-md-12">
+					{% include 'includes/property-simple-horizontal.html' %}
+				</div>
+				<!-- Single Property End -->
+				<!-- Single Property Start -->
+				<div class="col-lg-6 col-md-12">
+					{% include 'includes/property-simple-horizontal.html' %}
+				</div>
+				<!-- Single Property End -->
+
+			</div>
+
+			<!-- Pagination -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+					<a href="/show-all-property/" class="btn btn-theme-light rounded">Browse More Properties</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- ============================ All Featured Property ================================== -->
+
+	<!-- ============================ Step How To Use Start ================================== -->
+	<section>
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-10 text-center">
+					<div class="sec-heading center">
+						<h2>Explore Featured Agents</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Single Agent -->
+				{% include 'includes/agent.html' %}
+				<!-- Single Agent -->
+				{% include 'includes/agent.html' %}
+				<!-- Single Agent -->
+				{% include 'includes/agent.html' %}
+			</div>
+
+			<!-- Pagination -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+					<a href="/liste-agents/" class="btn btn-theme-light-2 rounded">Explore More Agents</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<div class="clearfix"></div>
+	<!-- ============================ Step How To Use End ================================== -->
+
+	<!-- ============================ Smart Testimonials ================================== -->
+	<section class="bg-orange">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-10 text-center">
+					<div class="sec-heading center">
+						<h2>Good Reviews by Customers</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+
+				<div class="col-lg-12 col-md-12">
+
+					<div class="smart-textimonials smart-center" id="smart-textimonials">
+
+						<!-- Single Item -->
+						<div class="item">
+							<div class="item-box">
+								<div class="smart-tes-author">
+									<div class="st-author-box">
+										<div class="st-author-thumb">
+											<div class="quotes bg-blue"><i class="ti-quote-right"></i></div>
+											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+										</div>
+									</div>
+								</div>
+
+								<div class="smart-tes-content">
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+										praesentium voluptatum deleniti.</p>
+								</div>
+
+								<div class="st-author-info">
+									<h4 class="st-author-title">Adam Williams</h4>
+									<span class="st-author-subtitle">CEO Of Microwoft</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Single Item -->
+						<div class="item">
+							<div class="item-box">
+								<div class="smart-tes-author">
+									<div class="st-author-box">
+										<div class="st-author-thumb">
+											<div class="quotes bg-inverse"><i class="ti-quote-right"></i></div>
+											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+										</div>
+									</div>
+								</div>
+
+								<div class="smart-tes-content">
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+										praesentium voluptatum deleniti.</p>
+								</div>
+
+								<div class="st-author-info">
+									<h4 class="st-author-title">Retha Deowalim</h4>
+									<span class="st-author-subtitle">CEO Of Apple</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Single Item -->
+						<div class="item">
+							<div class="item-box">
+								<div class="smart-tes-author">
+									<div class="st-author-box">
+										<div class="st-author-thumb">
+											<div class="quotes bg-purple"><i class="ti-quote-right"></i></div>
+											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+										</div>
+									</div>
+								</div>
+
+								<div class="smart-tes-content">
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+										praesentium voluptatum deleniti.</p>
+								</div>
+
+								<div class="st-author-info">
+									<h4 class="st-author-title">Sam J. Wasim</h4>
+									<span class="st-author-subtitle">Pio Founder</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Single Item -->
+						<div class="item">
+							<div class="item-box">
+								<div class="smart-tes-author">
+									<div class="st-author-box">
+										<div class="st-author-thumb">
+											<div class="quotes bg-primary"><i class="ti-quote-right"></i></div>
+											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+										</div>
+									</div>
+								</div>
+
+								<div class="smart-tes-content">
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+										praesentium voluptatum deleniti.</p>
+								</div>
+
+								<div class="st-author-info">
+									<h4 class="st-author-title">Usan Gulwarm</h4>
+									<span class="st-author-subtitle">CEO Of Facewarm</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Single Item -->
+						<div class="item">
+							<div class="item-box">
+								<div class="smart-tes-author">
+									<div class="st-author-box">
+										<div class="st-author-thumb">
+											<div class="quotes bg-success"><i class="ti-quote-right"></i></div>
+											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+										</div>
+									</div>
+								</div>
+
+								<div class="smart-tes-content">
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+										praesentium voluptatum deleniti.</p>
+								</div>
+
+								<div class="st-author-info">
+									<h4 class="st-author-title">Shilpa Shethy</h4>
+									<span class="st-author-subtitle">CEO Of Zapple</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- ============================ Smart Testimonials End ================================== -->
+
+	<!-- ========================== Download App Section =============================== -->
+	<section class="bg-light">
+		<div class="container">
+			<div class="row align-items-center">
+
+				<div class="col-lg-7 col-md-12 col-sm-12 content-column">
+					<div class="content_block_2">
+						<div class="content-box">
+							<div class="sec-title light">
+								<p class="text-blue">Download apps</p>
+								<h2>Download App Free App For Android and iPhone</h2>
+							</div>
+							<div class="text">
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+									laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+									architecto accusantium.</p>
+							</div>
+							<div class="btn-box clearfix mt-5">
+								<a href="/" class="download-btn play-store">
+									<i class="fab fa-google-play"></i>
+									<span>Download on</span>
+									<h3>Google Play</h3>
+								</a>
+
+								<a href="/" class="download-btn app-store">
+									<i class="fab fa-apple"></i>
+									<span>Download on</span>
+									<h3>App Store</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-5 col-md-12 col-sm-12 image-column">
+					<div class="image-box">
+						<figure class="image"><img src="https://via.placeholder.com/600x600" class="img-fluid" alt="">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ========================== Download App Section =============================== -->
+
+	{% endblock content %}

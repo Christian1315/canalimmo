@@ -1,0 +1,124 @@
+{% extends 'base-page.html' %}
+{% load static %}
+
+{% block content %}
+<!-- ============================ SignUp Agency ================================== -->
+<section class="gray-simple">
+
+	<div class="container">
+		<div class="row justify-content-center">
+
+			<!-- Submit Form -->
+			<div class="col-lg-10 col-md-10">
+
+				<div class="submit-page">
+
+					<div class="form-outer">
+						<div action="#" class="form">
+
+							<!-- Basic Info -->
+							<div class="form-submit page slide-page">
+								<!-- page -->
+								<h3 class="text-center">Inscription User</h3>
+								<form class="submit-section">
+									<div class="row">
+
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<!-- <label>Nom </label> -->
+												<div class="input-with-icon">
+													<input style="background-color: #F9FAFC;" type="text" class="form-control" name="first_name"
+														placeholder="Nom">
+													<i class="ti-user"></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<!-- <label>Prénom </label> -->
+												<div class="input-with-icon">
+													<input style="background-color: #F9FAFC;" type="text" class="form-control" name="last_name"
+														placeholder="Votre Prénom">
+													<i class="ti-user"></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<!-- <label>Prénom </label> -->
+												<div class="input-with-icon">
+													<input style="background-color: #F9FAFC;" type="email" class="form-control" name="email"
+														placeholder="Votre Email">
+													<i class="ti-email"></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<!-- <label>Prénom </label> -->
+												<div class="input-with-icon">
+													<input style="background-color: #F9FAFC;" type="phone" class="form-control" name="phone"
+														placeholder="+229 61000000">
+													<i class="lni-phone-handset"></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<!-- <label>Prénom </label> -->
+												<div class="input-with-icon">
+													<input style="background-color: #F9FAFC;" type="password" class="form-control" name="password"
+														placeholder="Mot de passe">
+													<i class="ti-unlock"></i>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="col-lg-6 col-md-6">
+											<div class="form-group">
+												<!-- <label>Prénom </label> -->
+												<div class="input-with-icon">
+													<input style="background-color: #F9FAFC;" type="password" class="form-control" name="re_password"
+														placeholder="Confirmer le mot de passe">
+													<i class="ti-unlock"></i>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group col-lg-12 col-md-12">
+											<label>GDPR Agreement *</label>
+											<ul class="no-ul-list">
+												<li>
+													<input id="aj-1" class="checkbox-custom" name="rgdp"
+														type="checkbox">
+													<label for="aj-1" class="checkbox-custom-label">I consent to having
+														this website store my submitted information so they can respond
+														to my inquiry.</label>
+												</li>
+											</ul>
+										</div>
+
+										<div class="form-group text-center">
+											<button type="submit"
+												class="btn btn-md btn-theme-light-2 rounded">Inscription</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+<!-- ============================ SignUp Agency ================================== -->
+
+{% endblock content %}

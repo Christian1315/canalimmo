@@ -1,0 +1,96 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>CanalImmo - Repensons l'immobilier plus sécurisé</title>
+	<link rel="icon" type="image/png" href="{% static 'img/icon-canalImmo.png' %}">
+
+	<!-- Custom CSS -->
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+	<!-- Custom Color Option -->
+	<link href="{% static 'css/colors.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body class="blue-skin">
+    <!-- Start Navigation -->
+        <div class="header header-transparent change-logo">
+            <div class="container">
+                <nav id="navigation" class="navigation navigation-landscape">
+                    <div class="nav-header">
+                        <a class="nav-brand static-logo" href="/"><img src="{% static 'img/logo-light.png' %}" class="logo" alt="" /></a>
+                        <a class="nav-brand fixed-logo" href="/"><img src="{% static 'img/logo.png' %}" class="logo" alt="" /></a>
+                        <div class="nav-toggle"></div>
+                    </div>
+                    <div class="nav-menus-wrapper" style="transition-property: none;">
+                        <ul class="nav-menu">
+                        
+                            <li class = "{% if request.path == '/a-louer/' %} active {% endif %}">
+                                <a href="/a-louer/ ">À louer<span class="submenu-indicator"></span></a>
+                            </li>
+
+                            <li class = "{% if request.path == '/a-vendre/' %} active {% endif %}">
+                                <a href="/a-vendre/">À vendre<span class="submenu-indicator"></span></a>
+                            </li>
+
+                            <li class = "{% if request.path == '/liste-agents/' %} active {% endif %}">
+                                <a href="/liste-agents/">Nos Agents<span class="submenu-indicator"></span></a>
+                            </li>
+
+                            <li class = "{% if request.path == '/liste-agences/' %} active {% endif %}">
+                                <a href="/liste-agences/">Nos Agences<span class="submenu-indicator"></span></a>
+                            </li>
+                            
+                        </ul>
+                        
+                        <ul class="nav-menu nav-menu-social align-to-right">
+                            
+                            <li class="add-listing blue mr-2">
+                                <a href="/publier-une-propriete/"><i class="fa fa-plus mr-2"></i> Publier</a>
+                            </li>
+                            <li class="add-listing light">
+                                <a href="/connexion/" data-bs-toggle="modal" data-bs-target="#login"><img src="static/img/user-dark.svg" width="12" alt="" class="mr-2" />Se connecter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <!-- End Navigation -->
+    {% block content %}
+    {% endblock content %}
+
+	{% include 'footer_base.html' %}
+	{% include 'base-modal.html' %}
+	<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+	</div>
+
+	<!-- ============================================================== -->
+	<!-- All Jquery -->
+	<!-- ============================================================== -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/popper.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/rangeslider.js' %}"></script>
+	<script src="{% static 'js/select2.min.js' %}"></script>
+	<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'js/slick.js' %}"></script>
+	<script src="{% static 'js/slider-bg.js' %}"></script>
+	<script src="{% static 'js/lightbox.js' %}"></script>
+	<script src="{% static 'js/imagesloaded.js' %}"></script>
+
+	<script src="{% static 'js/custom.js' %}"></script>
+	<!-- ============================================================== -->
+	<!-- This page plugins -->
+	<!-- ============================================================== -->
+</body>
+
+</html>

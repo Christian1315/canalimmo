@@ -1,0 +1,293 @@
+{% extends 'base-page.html' %}
+{% load static %}
+
+			{% block content %}
+			<div class="clearfix"></div>
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->
+			
+			<!-- ============================ Page Title Start================================== -->
+			<!-- <div class="page-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							
+							<h2 class="ipt-title">Submit Property</h2>
+							<span class="ipn-subtitle">Just Submit Your Property</span>
+							
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- ============================ Page Title End ================================== -->
+			
+			
+			<!-- ===================================================================================== -->
+			
+			<section class="gray-simple">
+				<div class="container container-2">
+					<div class="progress-container">
+						<div class="progress-bar" id="progress"></div>
+						<div class="circle active">1</div>
+						<div class="circle">2</div>
+						<div class="circle">3</div>
+					</div>
+					<!-- <div class="progress_bar">
+						<div class="step">
+							<p>Information Générale</p>
+							<div class="bullet">
+								<span>1</span>
+							</div>
+							<div class="check fas fa-check"></div>
+						</div>
+						<div class="step">
+							<p>Propriété</p>
+							<div class="bullet">
+								<span>2</span>
+							</div>
+							<div class="check fas fa-check"></div>
+						</div>
+						<div class="step">
+							<p>Plus de détails</p>
+							<div class="bullet">
+								<span>3</span>
+							</div>
+							<div class="check fas fa-check"></div>
+						</div>
+					</div> -->
+				</div>
+				<div class="body">
+					<div class="container">
+						<div class="form-outer">
+							<div action="#" class="form">
+	
+								<!-- Basic Info -->
+								<div class="form-submit page slide-page">	<!-- page -->
+									<h3>Information Générale</h3>
+									<div class="submit-section">
+										<div class="row">
+										
+											<div class="form-group col-md-12">
+												<label>Titre<span class="tip-topdata" data-tip="Property Title"><i class="ti-help"></i></span></label>
+												<input type="text" class="form-control">
+											</div>
+											
+											<div class="form-group col-md-6">
+												<label>Location/Vente</label>
+												<select id="status" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">À louer</option>
+													<option value="2">À vendre</option>
+												</select>
+											</div>
+											
+											<div class="form-group col-md-6">
+												<label>Type de propriété</label>
+												<select id="ptypes_rent" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">Chambre Ordianire</option>
+													<option value="2">Chambre Semi-sanitaire</option>
+													<option value="3">Chambre Sanitaire</option>
+													<option value="4">Chambre de luxe</option>
+													<option value="5">Offices</option>
+													<option value="6">Bureau</option>
+													<option value="7">Parcelle</option>
+												</select>
+											</div>
+
+											<div class="form-group col-md-6">
+												<label>Type de propriété</label>
+												<select id="ptypes_sale" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">Maison</option>
+													<option value="2">Villa</option>
+													<option value="3">Immeuble</option>
+													<option value="4">Parcelle</option>
+												</select>
+											</div>
+											
+											<div class="form-group col-md-6">
+												<label>Prix</label>
+												<input id="price_rent" type="text" class="form-control" placeholder="FCFA / mois">
+												<input id="price_sale" type="text" class="form-control" placeholder="FCFA">
+											</div>
+
+											<div class="form-group col-md-6">
+												<label>Superficie en m²</label>
+												<input type="text" class="form-control">
+											</div>
+											
+											<!-- <div class="form-group col-md-12">
+												<label>Images (maximum 06)</label>
+												<input id="images" type="file" class="form-control dropzone dz-clickable primary-dropzone" multiple>
+											</div> -->
+
+											<div class="form-group col-md-12">
+												<label>Images (maximum 06)</label>
+												<div id="images" class="dropzone dz-clickable primary-dropzone">
+													<input type="file" class="d-none" multiple>
+													<div class="dz-default dz-message">
+														<i class="ti-gallery w-md"></i>
+														<span>Cliquez ici pour charger vos images</span>
+													</div>
+												</div>
+											</div>
+	
+											<div class="form-group col-lg-12 col-md-12">
+												<button class="btn btn-theme-light-3 rounded next">Suivant</button>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- Location -->
+								<div class="form-submit page">	
+									<h3>Propriété</h3>
+									<div class="submit-section">
+										<div class="row">
+
+											<div class="form-group col-md-12">
+												<label>Description</label>
+												<textarea class="form-control h-120"></textarea>
+											</div>
+										
+											<div class="form-group col-md-6">
+												<label>Adresse détaillée</label>
+												<input type="text" class="form-control">
+											</div>
+											
+											<div class="form-group col-md-6">
+												<label>Ville</label>
+												<input type="text" class="form-control">
+											</div>
+											
+											<div class="form-group col-md-6">
+												<label>Quartier</label>
+												<input type="text" class="form-control">
+											</div>
+											
+											<div class="form-group col-md-6">
+												<label>N° de rue (Pas obligatoire)</label>
+												<input type="text" class="form-control">
+											</div>
+	
+											<div class="form-group col-lg-12 col-md-12">
+												<button class="btn btn-theme-light-4 rounded prev-1">Precedent</button>
+												<button class="btn btn-theme-light-3 rounded next-1">Suivant</button>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- Contact Information -->
+								<div class="form-submit page">	
+									<h3>Plus de détails</h3>
+									<div class="submit-section">
+										<div class="row">
+										
+											<div class="form-group col-md-6">
+												<label>Nombre de chambres</label>
+												<select id="bedrooms" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+											
+											<div class="form-group col-md-6">
+												<label>Nombre de toilettes</label>
+												<select id="bathrooms" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+											
+											<div class="form-group col-md-4">
+												<label>Année de construction</label>
+												<select id="bage" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">0 - 5 Years</option>
+													<option value="2">0 - 10Years</option>
+													<option value="3">0 - 15 Years</option>
+													<option value="4">0 - 20 Years</option>
+													<option value="5">20+ Years</option>
+												</select>
+											</div>
+											
+											<div class="form-group col-md-4">
+												<label>Garage (optional)</label>
+												<select id="garage" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">OUI</option>
+													<option value="2">NON</option>
+												</select>
+											</div>
+											
+											<div class="form-group col-md-4">
+												<label>Eau de Soneb</label>
+												<select id="rooms" class="form-control">
+													<option value="">&nbsp;</option>
+													<option value="1">OUI</option>
+													<option value="2">NON</option>
+												</select>
+											</div>
+											
+											<div class="form-group col-md-12">
+												<label>Autres Informations</label>
+												<div class="o-features">
+													<ul class="no-ul-list third-row">
+														<li>
+															<input id="a-1" class="checkbox-custom" name="a-1" type="checkbox">
+															<label for="a-1" class="checkbox-custom-label">Climatisation</label>
+														</li>
+														<li>
+															<input id="a-2" class="checkbox-custom" name="a-2" type="checkbox">
+															<label for="a-2" class="checkbox-custom-label">Piscine</label>
+														</li>
+														<li>
+															<input id="a-3" class="checkbox-custom" name="a-3" type="checkbox">
+															<label for="a-3" class="checkbox-custom-label">Sonnerie</label>
+														</li>
+														<li>
+															<input id="a-4" class="checkbox-custom" name="a-4" type="checkbox">
+															<label for="a-4" class="checkbox-custom-label">Connexion Internet</label>
+														</li>
+														<li>
+															<input id="a-5" class="checkbox-custom" name="a-5" type="checkbox">
+															<label for="a-5" class="checkbox-custom-label">Parking motocycliste</label>
+														</li>
+														<li>
+															<input id="a-6" class="checkbox-custom" name="a-6" type="checkbox">
+															<label for="a-6" class="checkbox-custom-label">Loin de la ville</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+	
+											<div class="form-group col-lg-12 col-md-12">
+												<button class="btn btn-theme-light-4 rounded prev-2">Precedent</button>
+												<button class="btn btn-theme-light-3 rounded submit" type="submit">Submit</button>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+	
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ============================ Submit Property End ================================== -->
+			
+			{% endblock content %}

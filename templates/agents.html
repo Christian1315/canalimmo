@@ -1,0 +1,160 @@
+{% extends 'base-page.html' %}
+{% load static %}
+
+			{% block content %}
+			<div class="clearfix"></div>
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->
+			
+			
+			<!-- ============================ Page Title Start================================== -->
+			<!-- <div class="page-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							
+							<h2 class="ipt-title">All Agents</h2>
+							<span class="ipn-subtitle">Lists of our all expert agents</span>
+							
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- ============================ Page Title End ================================== -->
+			
+			<!-- ============================ Agent List Start ================================== -->
+			<section class="gray-simple">
+			
+				<div class="container">
+
+					<!-- Search start -->
+					<div class="full-search-2 eclip-search italian-search hero-search-radius shadow mb-5">
+						<div class="hero-search-content">
+							
+							<div class="row">
+							
+								<div class="col-lg-3 col-md-3 col-sm-12">
+									<div class="form-group">
+										<div class="input-with-icon">
+											<select id="lieu" class="form-control">
+												<option value="">&nbsp;</option>
+												<option value="1">New York City</option>
+												<option value="2">Chicago, Illinois</option>
+												<option value="3">Las Vegas</option>
+												<option value="4">New Orleans</option>
+												<option value="5">San Francisco</option>
+												<option value="6">Washington</option>
+											</select>
+											<i class="ti-location-pin"></i>
+										</div>
+									</div>
+								</div>
+	
+								
+								<div class="col-lg-2 col-md-2 col-sm-12">
+									<div class="form-group">
+										<div class="input-with-icon b-l">
+											<select id="prix" class="form-control">
+												<option value="">&nbsp;</option>
+												<option value="1">Moins de 15000</option>
+												<option value="2">150000 - 30000</option>
+												<option value="3">Plus de 30000</option>
+											</select>
+											<i class="ti-credit-card"></i>
+										</div>
+									</div>
+								</div>
+
+								
+								<div class="col-lg-3 col-md-3 col-sm-12">
+									<div class="form-group">
+										<div class="input-with-icon b-l">
+											<select id="pieces" class="form-control">
+												<option value="">&nbsp;</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select>
+											<i class="ti-help-alt"></i>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-2 col-md-2 col-sm-12">
+									<div class="form-group">
+										<div class="input-with-icon b-l">
+											<select id="type" class="form-control">
+												<option value="">&nbsp;</option>
+												<option value="1">Ordinaire</option>
+												<option value="2">Semi-ordinaire</option>
+												<option value="3">Sanitaire</option>
+												<option value="4">Staffé</option>
+											</select>
+											<i class="ti-briefcase"></i>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-lg-2 col-md-2 col-sm-12">
+									<div class="form-group">
+										<a href="#" class="btn search-btn" style="background-color: #27B737;">Search</a>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+					<!-- Search end -->
+
+					<div class="row">
+						<!-- Single Agent -->
+						{% include 'includes/agent.html' %}
+
+						<!-- Single Agent -->
+						{% include 'includes/agent.html' %}
+
+						<!-- Single Agent -->
+						{% include 'includes/agent.html' %}
+
+						<!-- Single Agent -->
+						{% include 'includes/agent.html' %}
+
+						<!-- Single Agent -->
+						{% include 'includes/agent.html' %}
+
+						<!-- Single Agent -->
+						{% include 'includes/agent.html' %}
+					</div>
+					
+					<!-- Pagination -->
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<ul class="pagination p-center">
+								<li class="page-item">
+								  <a class="page-link" href="#" aria-label="Previous">
+									<span class="ti-arrow-left"></span>
+									<span class="sr-only">Previous</span>
+								  </a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item active"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">...</a></li>
+								<li class="page-item"><a class="page-link" href="#">18</a></li>
+								<li class="page-item">
+								  <a class="page-link" href="#" aria-label="Next">
+									<span class="ti-arrow-right"></span>
+									<span class="sr-only">Next</span>
+								  </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>	
+			</section>
+			<!-- ============================ Agent List End ================================== -->
+			{% endblock content %}
